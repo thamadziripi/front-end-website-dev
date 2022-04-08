@@ -29,7 +29,7 @@ header{
 }
 
 header .highlight{
-  color: #f93a13;
+  color: #ff7426;
   font-weight: bold;
 }
 
@@ -74,14 +74,14 @@ h1 {
 
 .jobtitle{
   font-family: "Poppins", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 p{
     font-family: "Montserrat", sans-serif;
     color: #edf0f1;
     font-size: 18px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 
@@ -90,7 +90,7 @@ p{
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-height: 550px;
+    max-height: 600px;
     padding: 200px;
     background: #3c31dd;
 }
@@ -107,45 +107,49 @@ div.introduction_header{
   clip-path: circle();
 }
 
-.services{
-  position: relative;
-  display: flex;
+#boxes {
   flex-direction: row;
   align-items: center;
+  text-align: center;
   min-height: 600px;
-  padding: 200px;
-  background: #edf0f1;
+  padding: 50px;
   color: #3c31dd;
-  font-size: 50px;
-}
-
-.h_services{
-  color: #3c31dd;
-  font-size: 50px;
-}
-
-.p_services{
-  color: #000935;
-  font-size: large;
-  line-height: 0.5px;
+  background: #000935;
 }
 
 #boxes {
-  background: #edf0f1;
+  background: #000935;
 }
 
 #boxes .box{
   float: left;
   width: 30%;
-  padding: 10px;
+  padding: 30px;
   text-align: center;
-  background: #edf0f1;
+  background: #000935;
+  position: relative;
 }
 
 #boxes .box img{
   width: 350px;
   height: 200px;
 }
+
+#boxes .box h3{
+  color: #ff7426;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1.5;
+}
+
+#boxes .box article{
+  color: #edf0f1;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  padding: 20px;
+
+}
+
 
 .wave {
     position: absolute;
@@ -165,7 +169,7 @@ div.introduction_header{
 }
 
 .wave .shape-fill {
-    fill: #edf0f1;
+    fill: #000935;
 }
 
 /* get in touch button */
@@ -204,7 +208,7 @@ div.introduction_header{
   width: auto;
   word-break: keep-all;
   z-index: 0;
-  top: 50px;
+  top: 30px;
   bottom: 100px;
 }
 
@@ -272,6 +276,12 @@ div.introduction_header{
   opacity: .24;
 }
 
-/* Social buttons*/
-
+footer{
+  padding: 20px;
+  color: #edf0f1;
+  background-color: #f93a13;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
   
