@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+    line-height: 2;
+}
+
+li, a, h1, h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: centre;
+    padding: 30px 10px;
+    background-color: #24252A;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+li::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: #f93a13;
+    display: block;
+    transition: .3s ease-in-out;
+}
+
+li:hover::after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #f93a13;
+    display: block;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__links li a:hover {
+    color: #f93a13;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    color: #edf0f1;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 800px;
+    padding: 100px;
+}
+
+.intro{
+    background: #3c31dd;
+}
+
+.services{
+    background: #edf0f1;
+    color: black;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 192px;
+}
+
+.wave .shape-fill {
+    fill: #edf0f1;
+}
+
+/* get in touch button */
+.button_1 {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+  top: 300px;
+  bottom: 100px;
+}
+
+@media (min-width: 768px) {
+  .button_1 {
+    padding: 19px 32px;
+  }
+}
+
+.button_1:before,
+.button_1:after {
+  border-radius: 80px;
+}
+
+.button_1:before {
+  background-color: rgba(249, 58, 19, .32);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button_1:after {
+  background-color: initial;
+  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.button_1:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+}
+
+.button_1:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button_1:active:not(:disabled):after {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button_1:disabled {
+  cursor: default;
+  opacity: .24;
+}
+
+/* Social buttons*/
+.fa {
+    color: #f93a13;
+    display: inline-block;
+    padding: 0px 30px;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+  }
+
+  
