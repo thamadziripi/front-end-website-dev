@@ -19,12 +19,18 @@ li, a, h1, h2{
 }
 
 /* Header */
+/* background-color: #24252A; */
 header{
     display: flex;
     justify-content: space-between;
     align-items: centre;
-    padding: 30px 10px;
-    background-color: #24252A;
+    padding: 20px 10px;
+    background-color: #3c31dd;
+}
+
+header .highlight{
+  color: #f93a13;
+  font-weight: bold;
 }
 
 .nav__links{
@@ -66,27 +72,79 @@ h1 {
     font-size: large;
 }
 
+.jobtitle{
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+
 p{
     font-family: "Montserrat", sans-serif;
     color: #edf0f1;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
-section {
+
+.aboutme {
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    min-height: 800px;
-    padding: 100px;
-}
-
-.intro{
+    max-height: 550px;
+    padding: 200px;
     background: #3c31dd;
 }
 
+div.introduction_header{
+  float: left;
+  text-align: left;
+  padding: 180px;
+
+}
+
+.selfie{
+  width: 250px;
+  clip-path: circle();
+}
+
 .services{
-    background: #edf0f1;
-    color: black;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 600px;
+  padding: 200px;
+  background: #edf0f1;
+  color: #3c31dd;
+  font-size: 50px;
+}
+
+.h_services{
+  color: #3c31dd;
+  font-size: 50px;
+}
+
+.p_services{
+  color: #000935;
+  font-size: large;
+  line-height: 0.5px;
+}
+
+#boxes {
+  background: #edf0f1;
+}
+
+#boxes .box{
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  background: #edf0f1;
+}
+
+#boxes .box img{
+  width: 350px;
+  height: 200px;
 }
 
 .wave {
@@ -146,7 +204,7 @@ section {
   width: auto;
   word-break: keep-all;
   z-index: 0;
-  top: 300px;
+  top: 50px;
   bottom: 100px;
 }
 
@@ -215,14 +273,5 @@ section {
 }
 
 /* Social buttons*/
-.fa {
-    color: #f93a13;
-    display: inline-block;
-    padding: 0px 30px;
-  }
-
-.fa:hover {
-    opacity: 0.7;
-  }
 
   
