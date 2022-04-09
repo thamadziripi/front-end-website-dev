@@ -1,22 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 0.5px;
-    line-height: 2;
-}
-
-li, a, h1, h2{
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-}
 
 /* Header */
 /* background-color: #24252A; */
@@ -24,12 +9,19 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: centre;
-    padding: 20px 10px;
-    background-color: #3c31dd;
+    padding: 20px 20px;
+    background-color: #00203f;
 }
 
+header h1 {
+  color: #adefd1;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+}
+
+
 header .highlight{
-  color: #ff7426;
+  color: #edf0f1;
   font-weight: bold;
 }
 
@@ -61,6 +53,10 @@ li:hover::after{
 
 .nav__links li a {
     transition: all 0.3s ease-in-out;
+    color: #adefd1;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 .nav__links li a:hover {
@@ -68,8 +64,8 @@ li:hover::after{
 }
 
 h1 {
-    font-family: "Poppins", sans-serif;
-    font-size: large;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: large;
 }
 
 .jobtitle{
@@ -85,203 +81,88 @@ p{
 }
 
 
-.aboutme {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    max-height: 600px;
-    padding: 200px;
-    background: #3c31dd;
-}
-
-div.introduction_header{
-  float: left;
-  text-align: left;
-  padding: 180px;
-
-}
-
-.selfie{
-  width: 250px;
-  clip-path: circle();
-}
-
-#boxes {
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
+#showcase {
+  position: absolute;
+  width: 100%;
   min-height: 600px;
-  padding: 50px;
-  color: #3c31dd;
-  background: #000935;
+  background: url("../img/header_upload\ \(1\).PNG") no-repeat;
+  background-color: #00203f;
+  text-align: left;
+  background-position: center;
+  background-size:contain;
+  padding-left: 200px;
 }
 
-#boxes {
-  background: #000935;
+#showcase h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  color: #adefd1;
+  margin: 50px;  
 }
 
-#boxes .box{
-  float: left;
-  width: 30%;
-  padding: 30px;
-  text-align: center;
-  background: #000935;
-  position: relative;
-}
-
-#boxes .box img{
-  width: 350px;
-  height: 200px;
-}
-
-#boxes .box h3{
-  color: #ff7426;
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 1.5;
-}
-
-#boxes .box article{
+#showcase p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
   color: #edf0f1;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  padding: 20px;
-
+  margin: 50px;  
 }
 
-
-.wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.wave svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 192px;
-}
-
-.wave .shape-fill {
-    fill: #000935;
-}
-
-/* get in touch button */
 .button_1 {
-  align-items: center;
-  appearance: none;
-  background-clip: padding-box;
-  background-color: initial;
-  background-image: none;
-  border-style: none;
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
-  color: #fff;
+  color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  flex-direction: row;
-  flex-shrink: 0;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
   font-size: 16px;
   font-weight: 800;
-  justify-content: center;
-  line-height: 24px;
-  margin: 0;
-  min-height: 64px;
-  outline: none;
-  overflow: visible;
-  padding: 19px 26px;
-  pointer-events: auto;
-  position: relative;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
   text-align: center;
-  text-decoration: none;
+  text-rendering: geometricprecision;
   text-transform: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
-  width: auto;
-  word-break: keep-all;
-  z-index: 0;
-  top: 30px;
-  bottom: 100px;
+  margin-left: 50px;  
 }
 
-@media (min-width: 768px) {
-  .button_1 {
-    padding: 19px 32px;
-  }
-}
-
-.button_1:before,
-.button_1:after {
-  border-radius: 80px;
-}
-
-.button_1:before {
-  background-color: rgba(249, 58, 19, .32);
-  content: "";
-  display: block;
-  height: 100%;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -2;
-}
-
-.button_1:after {
+.button_1:hover,
+.button_1:active {
   background-color: initial;
-  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
-  bottom: 4px;
-  content: "";
-  display: block;
-  left: 4px;
-  overflow: hidden;
-  position: absolute;
-  right: 4px;
-  top: 4px;
-  transition: all 100ms ease-out;
-  z-index: -1;
+  background-position: 0 0;
+  color: #FF4742;
 }
 
-.button_1:hover:not(:disabled):after {
+.button_1:active {
+  opacity: .5;
+}
+
+
+
+.waves_1 {
+  position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
-  top: 0;
-  transition-timing-function: ease-in;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
-.button_1:active:not(:disabled) {
-  color: #ccc;
+.waves_1 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 120px;
 }
 
-.button_1:active:not(:disabled):after {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
-  bottom: 4px;
-  left: 4px;
-  right: 4px;
-  top: 4px;
+.waves_1 .shape-fill {
+  fill: #ADEFD1;
 }
-
-.button_1:disabled {
-  cursor: default;
-  opacity: .24;
-}
-
-footer{
-  padding: 20px;
-  color: #edf0f1;
-  background-color: #f93a13;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-}
-  
