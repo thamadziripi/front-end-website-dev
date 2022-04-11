@@ -248,6 +248,7 @@ footer .social :hover {
     .showcase-text {
         text-align: center;
         margin-top: 40px;
+        margin: 10px;
     }
 
     .showcase-form {
@@ -258,6 +259,19 @@ footer .social :hover {
 
     .about-text{
         text-align: center;
+        margin: 10px;
+    }
+
+    .about img{
+        padding-left: 50px;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .footer .social a{
+        float: none;
     }
 }
 
@@ -270,7 +284,7 @@ footer .social :hover {
 
     .navbar .flex {
         flex-direction: column;
-        overflow: hidden;
+        overflow: visible;
         background-color: rgba(0, 0, 0, 0.3);
     }
 
