@@ -4,7 +4,6 @@
     --primary-color: #00203FFF;
     --secondary-color: #adefd1ff;
     --third-color: rgb(255, 0, 64);
-
 }
 
 * {
@@ -61,13 +60,14 @@ img {
 }
 
 .navbar a {
-    color: var(--secondary-color);
+    color: white;
     padding: 10px;
     margin: 0 5px;
 }
 
 .navbar a:hover {
     border-bottom: 2px var(--secondary-color) solid;
+    color: var(--secondary-color);
 }
 
 .navbar .flex {
@@ -88,11 +88,12 @@ img {
 
 .showcase p {
     margin: 20px 0;
+    letter-spacing: 0.5px;
 }
 
 .showcase .grid {
     overflow: visible;
-    gap: 30px;
+    gap: 50px;
 }
 
 .showcase-form {
@@ -100,7 +101,7 @@ img {
     top: 60px;
     height: 350px;
     width: 400px;
-    padding: 40px;
+    padding: 60px;
     z-index: 100;
 }
 
@@ -126,16 +127,40 @@ img {
     content: "";
     position: absolute;
     height: 100px;
-    bottom: 190px;
+    bottom: 275px;
     right: 0;
     left: 0;
     background-color: #fff;
     transform: skewY(-3deg);
 }
 
-/* services */
-.services {
-    padding-top: 100px;
+/* about me */
+.about img {
+    padding-top: 20px;
+    padding-left: 120px;
+    opacity: 0.95;
+    width: auto;
+    max-height: 400px;
+    border-radius: 70%;
+}
+
+.about-text{
+    height: 200px;
+}
+
+.about-text h1 {
+    color: var(--primary-color);
+}
+
+.about-text p {
+    color: black;
+    line-height: 1.5;
+}
+
+.about .grid {
+    overflow: visible;
+    gap: 50px;
+    
 }
 
 
