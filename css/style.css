@@ -122,6 +122,7 @@ img {
     outline: none;
 }
 
+/*
 .showcase::before,
 .showcase::before {
     content: "";
@@ -132,7 +133,7 @@ img {
     left: 0;
     background-color: #fff;
     transform: skewY(-3deg);
-}
+}*/
 
 /* about me */
 .about img {
