@@ -103,6 +103,11 @@ img {
     width: 400px;
     padding: 60px;
     z-index: 100;
+    animation: slideInFromRight 0.5s ease-in;
+}
+
+.showcase-text {
+    animation: slideInFromLeft 0.5s ease-in;
 }
 
 .showcase-form .form-control {
@@ -161,9 +166,71 @@ img {
 .about .grid {
     overflow: visible;
     gap: 50px;
-    
+    margin-bottom: 100px;
+    margin-top: 20px;
+    animation: slideInFromBottom 0.5s ease-in;
 }
 
+footer {
+    background-color: var(--primary-color);
+    align-items: center;
+}
+
+footer p {
+    color: white;
+}
+
+footer .social a {
+    margin: 0 20px;
+    float: right;
+    color: white;
+}
+
+footer .social :hover {
+    transform: scale(.95);
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
 
 /* global */
 .container {
