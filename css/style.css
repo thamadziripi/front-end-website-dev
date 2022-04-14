@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 :root {
-    --primary-color: rgb(0, 23, 48);
+    --primary-color: rgb(0, 35, 73);
     --secondary-color: #17edbb;
     --third-color: rgb(255, 0, 64);
 }
@@ -82,7 +82,7 @@ img {
 /* showcase */
 .showcase {
     /*background-color: var(--primary-color);*/
-    background-image: linear-gradient(to bottom right, var(--primary-color), rgb(1, 27, 54));
+    background-image: linear-gradient(to bottom, var(--primary-color), rgb(0, 9, 19));
     height: 400px;
     color: #fff;
 }
@@ -225,8 +225,21 @@ footer .social :hover {
     }
 }
 
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
 /* Tablets */
-@media(max-width: 760px) {
+@media(max-width: 952px) {
     .grid,
     .showcase .grid,
     .about .grid ,
@@ -271,19 +284,33 @@ footer .social :hover {
 
 
 /* Mobile */
-@media(max-width: 760px){
-    .navbar {
-        height: 120px;
-    }
+@media(max-width: 858px){
 
-    .navbar .flex {
-        flex-direction: column;
-        overflow: visible;
-        background-color: rgba(0, 0, 0, 0.3);
+    .checkbtn {
+        display: block;
     }
 
     .navbar ul{
-        padding: 10px;
+        position: fixed;
+        width: 80%;
+        height: 100%;
+        background: rgb(0, 35, 73, 0.97);
+        top: 100px;
+        right: 0px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 200px;
+        display: none;
+        z-index: 999;
+    }
+
+    .navbar ul li a{
+        line-height: 70px;
+    }
+
+    #check:checked ~ ul{
+        right: 0;
+        display: block; 
     }
 }
 
