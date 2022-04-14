@@ -249,15 +249,16 @@ footer .social :hover {
 
     .showcase {
         height: auto;
-        padding-top: 60px;
     }
 
     .showcase-text {
         text-align: center;
+        margin-top: 40px;
         margin: 10px;
     }
 
     .showcase-form {
+        top: 30px;
         justify-self: center;
         margin: auto;
     }
@@ -265,12 +266,10 @@ footer .social :hover {
     .about-text{
         text-align: center;
         margin: 5px;
-        margin-bottom: 70px;
     }
 
     .about img{
         padding-left: 50px;
-        margin-top: 70px;
     }
 
     .footer{
