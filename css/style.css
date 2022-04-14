@@ -81,7 +81,8 @@ img {
 
 /* showcase */
 .showcase {
-    background-color: var(--primary-color);
+    /*background-color: var(--primary-color);*/
+    background-image: linear-gradient(to bottom right, var(--primary-color), rgb(1, 27, 54));
     height: 400px;
     color: #fff;
 }
@@ -131,19 +132,6 @@ img {
 .showcase-form input:focus {
     outline: none;
 }
-
-/*
-.showcase::before,
-.showcase::before {
-    content: "";
-    position: absolute;
-    height: 100px;
-    bottom: 275px;
-    right: 0;
-    left: 0;
-    background-color: #fff;
-    transform: skewY(-3deg);
-}*/
 
 /* about me */
 .about img {
@@ -333,6 +321,7 @@ footer .social :hover {
 
 .btn:hover {
     transform: scale(.97);
+    background-color: #249278;
 }
 
 .flex {
