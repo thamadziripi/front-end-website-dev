@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 :root {
-    --primary-color: #00203FFF;
-    --secondary-color: #adefd1ff;
+    --primary-color: rgb(0, 23, 48);
+    --secondary-color: #17edbb;
     --third-color: rgb(255, 0, 64);
 }
 
@@ -52,7 +52,7 @@ img {
 /* Navigation bar */
 .navbar {
     background-color: var(--primary-color);
-    height: 70px;
+    height: 110px;
 }
 
 .navbar ul {
@@ -72,6 +72,11 @@ img {
 
 .navbar .flex {
     justify-content: space-between;
+}
+
+.navbar img {
+    max-height: 80px;
+    align-self: left;
 }
 
 /* showcase */
@@ -273,6 +278,7 @@ footer .social :hover {
     .footer .social a{
         float: none;
     }
+
 }
 
 
