@@ -52,11 +52,11 @@ img {
 /* Navigation bar */
 .navbar {
     background-color: var(--primary-color);
-    height: 110px;
+    height: 120px;
 }
 
 .navbar ul {
-    display: flex;
+    display: flex;  
 }
 
 .navbar a {
@@ -77,6 +77,8 @@ img {
 .navbar img {
     align-self: left;
     object-fit: cover;
+    height: auto;
+    width: 60%;
 }
 
 /* showcase */
